@@ -1,0 +1,119 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 3em;
+    color: #004e89;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px #ffffff;
+}
+
+h2{
+  background-color: white;
+}
+
+
+.draggableContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    background-color: #87CEEB;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 5px;
+    color: #fff;
+    font-weight: bold;
+    cursor: grab;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.droppableContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #e6f7ff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(20, 20, 20, 200);
+}
+
+
+.droppable {
+    width: 70px;
+    height: 70px;
+    border: 2px dashed #4a90e2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.droppable:hover {
+    border-color: #87CEEB;
+    background-color: #f0f8ff;
+}
+
+
+.droppable img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+
+.board {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #d1ecf1;
+    border-radius: 10px;
+    color: #31708f;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.board p {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+.item-label {
+    position: absolute;
+    left: -9999px;
+}
+
+.item-label {
+    position: absolute;
+    left: -9999px;
+}
+
+.reset:hover {
+    background-color: #ff7878;
+}
