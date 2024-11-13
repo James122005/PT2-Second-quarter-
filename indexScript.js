@@ -49,4 +49,4 @@ droppableElements.forEach(element => {
 
 function reset(event) {
     location.reload();
-}
+    }
